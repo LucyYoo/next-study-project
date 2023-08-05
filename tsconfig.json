@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
+    "target": "es5", //ECMAScript 대상 버전 지정
+    "lib": ["dom", "dom.iterable", "esnext"], //컴파일에 포함될 라이브러리 파일 목록
+    "allowJs": true, //javascript 파일의 컴파일을 허용
+    "skipLibCheck": true, //모든 선언 파일(*.d.ts)의 타입 검사를 건너띔
+    "strict": true, //모든 엄격한 타입 검사 옵션 활성화 (--noImplicitAny, --noImplicitThis, --alwaysStrict, --strictNullChecks, --strictFunctionTypes)
+    "forceConsistentCasingInFileNames": false, //파일명 대소문자를 자유롭게 사용할 수 있게할 건지
+    "noEmit": true, //true로 설정 시 컴파일 해도 .js 파일이 생성되지 않는다.
+    "esModuleInterop": true, //false일 경우 TypeScript는 CommonJS, AMD, UMD 모듈도 ES6 모듈과 유사하게 처리
+    "module": "esnext", //모듈 지정
+    "moduleResolution": "bundler", //모듈 해석 방법 결정
+    "resolveJsonModule": true, //.json 확장자로 import된 모듈을 포함
+    "isolatedModules": true, //추가 검사를 수행하여 별도의 컴파일이 안전한지 확인
+    "jsx": "preserve", //.tsx 파일에서 jsx 지원
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"]
